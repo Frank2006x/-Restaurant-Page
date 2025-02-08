@@ -24,6 +24,18 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      // {
+      //   test: /\.svg$/,
+      //   use: ["svg-inline-loader"], // Converts SVG to an inline string
+      // },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      }
     ],
   },
 };

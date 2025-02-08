@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 1.1rem 3rem;
+}
+nav a:hover{
+    color: orangered;
+    background-color: aliceblue;
+    text-decoration:double;
+    border-radius: 0.7rem;
+}
+nav{
+    display: flex;
+    /* gap:2rem; */
+    background-color: rgba(234, 88, 88, 1);
+    /* padding: 1.1rem; */
+    padding-left: 2rem;
+}
+#icon{
+    height: 3rem;
+    width: 3rem;
+    align-self: center;
+    margin-left: auto;
+    padding-right: 2rem;
+    
+}
+#mainimg{
+    
+    width: 18rem;
+    padding: 20px;
+    
+}
+#dish{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: rotate(90deg);
+
+
+}
