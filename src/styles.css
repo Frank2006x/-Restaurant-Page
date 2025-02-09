@@ -17,7 +17,7 @@ nav a{
 }
 nav a:hover{
     color: rgb(255, 255, 255);
-    background-color: rgb(230, 74, 46);
+    /* background-color: rgb(230, 74, 46); */
     text-decoration:double;
     border-radius: 0.7rem;
 }
@@ -112,4 +112,26 @@ nav{
     margin-right:6rem;
     flex-direction: column;
     gap:2rem;
+}
+
+
+#div_about{
+    height: 24rem;
+    width:24rem;
+    border-radius: 12rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+#about_img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+#about_text{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    gap: 2rem;
 }
