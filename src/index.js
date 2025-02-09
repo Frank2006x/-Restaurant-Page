@@ -1,21 +1,36 @@
 import './styles.css';
 import myIcon from './asset/logo.svg';
-import dishPic from './asset/dish.jpg';
-const dishPicEle=document.createElement("img");
-dishPicEle.setAttribute("id","dish");
-const content=document.getElementById("content");
-const mainImg=document.getElementById("mainimg");
-
-
-dishPicEle.src=dishPic;
-mainImg.appendChild(dishPicEle);
+import init from './init_page.js';
+import menu_items from './menu.js';
+// menu();
 const iconEle = document.getElementById("icon");
 iconEle.src = myIcon;
-const text=document.createElement("p");
-text.textContent="Nestled in the heart of the city, The Golden Fork is a haven for food lovers.With its warm ambiance and elegant décor, it welcomes guests into a world of flavors.Soft lighting and soothing music set the perfect mood for a delightful dining experience.The aroma of freshly baked bread and sizzling spices fills the air.";
-content.appendChild(text);
+const home=document.getElementById("home_nav");
+const menu=document.getElementById("menu_nav");
+const content = document.getElementById("content");
+function clearContent() {
+    content.innerHTML = '';
+}
 
-// document.getElementById("icon").appendChild(iconEle);
+home.addEventListener("click",(event)=>{
+    event.preventDefault();// Prevent default link behavior
+    content.style.flexDirection="row";
+    content.style.gap="0rem";
+    clearContent();
+    init();
+
+}
+);
+menu.addEventListener("click",(event)=>{
+    event.preventDefault();
+    clearContent();
+    content.style.flexDirection="column";
+    content.style.gap="6rem";
+    
+    menu_items();}
+
+)
+
 
 
 console.log("hello");
