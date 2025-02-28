@@ -20,3 +20,5 @@ export default function(){
     content.appendChild(divEle);
 
 }
+console.log("hekki");
+// heihieowr 
